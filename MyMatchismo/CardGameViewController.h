@@ -10,4 +10,11 @@
 
 @interface CardGameViewController : UIViewController
 
+- (IBAction)flipCard:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+
+@property (nonatomic) int flipCount;
+
+
 @end
