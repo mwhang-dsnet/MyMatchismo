@@ -1,5 +1,5 @@
 //
-//  Deck.h
+//  PlayingCard.h
 //  MyMatchismo
 //
 //  Created by Michael Whang on 7/8/13.
@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "Card.h"
 
-@interface Deck : NSObject
+@interface PlayingCard : Card
 
-- (void)addCard:(Card *)card atTop:(BOOL)atTop;
+@property (strong, nonatomic) NSString *suit;
+@property (nonatomic) NSUInteger rank;
 
-- (Card *)drawRandomCard;
-
++ (NSArray *)validSuits;
++ (NSUInteger)maxRank;
 
 @end

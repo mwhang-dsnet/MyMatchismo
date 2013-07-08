@@ -1,5 +1,5 @@
 //
-//  Deck.h
+//  PlayingCardDeck.h
 //  MyMatchismo
 //
 //  Created by Michael Whang on 7/8/13.
@@ -7,13 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Card.h"
+#import "Deck.h"
 
-@interface Deck : NSObject
-
-- (void)addCard:(Card *)card atTop:(BOOL)atTop;
-
-- (Card *)drawRandomCard;
-
+@interface PlayingCardDeck : Deck
 
 @end
