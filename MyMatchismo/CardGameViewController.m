@@ -7,23 +7,25 @@
 //
 
 #import "CardGameViewController.h"
+#import "PlayingCardDeck.h"
+#import "PlayingCard.h"
 
 @interface CardGameViewController ()
 
+@property (strong, nonatomic) PlayingCardDeck *myDeck;
+@property (nonatomic) int flipCount;
+
 @end
+
 
 @implementation CardGameViewController
 
-- (void)viewDidLoad
+- (PlayingCardDeck *)myDeck
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (!_myDeck) {
+       _myDeck = [[PlayingCardDeck alloc] init];
+    }
+    return _myDeck;
 }
 
 - (void)setFlipCount:(int)flipCount {
@@ -32,10 +34,14 @@
 }
 
 - (IBAction)flipCard:(UIButton *)sender {
+    // Is the front of the card currently showing? If not, then draw from myDeck
+    if (!sender.isSelected) {    
+        Card *myCard = [self.myDeck drawRandomCard];
+        [sender setTitle:myCard.contents forState:UIControlStateSelected];
+        NSLog(@"Card Contents: %@", myCard.contents);
+        self.flipCount++;
+    }
     sender.selected = !sender.isSelected;
-    self.flipCount++;
 }
-
-
 
 @end

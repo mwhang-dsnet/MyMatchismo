@@ -14,7 +14,5 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 
-@property (nonatomic) int flipCount;
-
 
 @end
