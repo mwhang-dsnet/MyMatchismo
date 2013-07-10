@@ -17,7 +17,6 @@
 
 @end
 
-
 @implementation CardGameViewController
 
 - (PlayingCardDeck *)myDeck
