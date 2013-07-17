@@ -24,6 +24,7 @@
 		4203F518178B58F700DEDFF7 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 4203F517178B58F700DEDFF7 /* PlayingCardDeck.m */; };
 		427F883C178B682C000CFE08 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 427F883A178B682C000CFE08 /* Icon.png */; };
 		427F883D178B682C000CFE08 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 427F883B178B682C000CFE08 /* Icon@2x.png */; };
+		42D175E8178E289D006FCDDD /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D175E7178E289D006FCDDD /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		4203F517178B58F700DEDFF7 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		427F883A178B682C000CFE08 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		427F883B178B682C000CFE08 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		42D175E6178E289D006FCDDD /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
+		42D175E7178E289D006FCDDD /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 		4203F512178B2ED000DEDFF7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				42D175E6178E289D006FCDDD /* CardMatchingGame.h */,
+				42D175E7178E289D006FCDDD /* CardMatchingGame.m */,
 				4203F50C178B2EBA00DEDFF7 /* Card.h */,
 				4203F50D178B2EBA00DEDFF7 /* Card.m */,
 				4203F50F178B2EC900DEDFF7 /* Deck.h */,
@@ -217,6 +222,7 @@
 				4203F511178B2EC900DEDFF7 /* Deck.m in Sources */,
 				4203F515178B4B3800DEDFF7 /* PlayingCard.m in Sources */,
 				4203F518178B58F700DEDFF7 /* PlayingCardDeck.m in Sources */,
+				42D175E8178E289D006FCDDD /* CardMatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -199,15 +199,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cXc-lf-byA">
+                                <rect key="frame" x="208" y="419" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="3ZE-ei-a2c" id="A8a-dC-gph"/>
+                        <outlet property="scoreLabel" destination="cXc-lf-byA" id="bPm-yz-wrI"/>
+                        <outletCollection property="cardButtons" destination="kGB-lu-3ph" id="NXu-ie-NxB"/>
+                        <outletCollection property="cardButtons" destination="50u-fS-Kxc" id="IKx-Ts-wAV"/>
+                        <outletCollection property="cardButtons" destination="PAJ-ef-8EY" id="QJz-1f-jUh"/>
+                        <outletCollection property="cardButtons" destination="U8N-Rf-SzW" id="euQ-S6-KYf"/>
+                        <outletCollection property="cardButtons" destination="Lt0-xs-53A" id="uE1-1A-8ro"/>
+                        <outletCollection property="cardButtons" destination="uin-o4-oPE" id="y68-vK-hz0"/>
+                        <outletCollection property="cardButtons" destination="2vo-hK-Wa4" id="Sxo-8d-SMC"/>
+                        <outletCollection property="cardButtons" destination="wsk-C0-MJZ" id="Ax5-t3-GGR"/>
+                        <outletCollection property="cardButtons" destination="hfm-rT-eKw" id="71h-Bs-zAI"/>
+                        <outletCollection property="cardButtons" destination="uCy-fZ-AiD" id="YWK-PL-po5"/>
+                        <outletCollection property="cardButtons" destination="Wc4-01-5Ad" id="iQl-aX-QyT"/>
+                        <outletCollection property="cardButtons" destination="GFp-UV-HEb" id="a3A-el-fKc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="96" y="45"/>
         </scene>
     </scenes>
     <classes>
@@ -216,6 +237,8 @@
             <relationships>
                 <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>
             </relationships>
         </class>
     </classes>
